@@ -1,14 +1,14 @@
-# /create-plan
+# /plan-create
 
 Scaffold a multi-phase implementation plan for a complex task.
 
 ## Usage
 
 ```
-/create-plan <plan-name>
+/plan-create <plan-name>
 ```
 
-Example: `/create-plan auth-system` → creates `docs/plans/auth-system/`
+Example: `/plan-create auth-system` → creates `docs/plans/auth-system/`
 
 ## Instructions
 
