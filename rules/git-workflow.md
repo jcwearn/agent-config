@@ -17,3 +17,9 @@
 2. **Never force push to main** — `git push --force` and `--force-with-lease` are prohibited on `main`. They are allowed on feature branches only.
 3. **Never delete branches** — Do not run `git branch -D`, `git branch -d`, or `git push origin --delete`. The user handles branch cleanup.
 4. **No destructive git operations** — Do not run `git reset --hard`, `git checkout -- .`, `git clean -f`, or similar commands that discard uncommitted work.
+
+## Completing the Workflow
+
+- **Always complete the full cycle**: branch → changes → commit → push → PR create. Do not stop after committing without pushing. Do not stop after pushing without opening a PR.
+- If you encounter an error at any step (e.g., push fails, PR creation fails), troubleshoot and resolve it — don't leave the workflow incomplete.
+- The only reason to stop early is if the user explicitly tells you to stop.
