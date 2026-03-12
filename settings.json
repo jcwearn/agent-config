@@ -7,5 +7,8 @@
       "Bash(wget * | sh)",
       "Bash(wget * | bash)"
     ]
+  },
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
   }
 }
