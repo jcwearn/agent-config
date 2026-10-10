@@ -7,7 +7,7 @@
    - If there are only new/untracked files or no changes, skip to the next step
 2. Pull the latest from `main`: `git checkout main && git pull origin main`
 3. Create a branch: `git checkout -b <type>/<description>` where type matches the work (e.g., `feat/`, `fix/`, `chore/`, `refactor/`, `docs/`)
-4. Make changes and commit
+4. Make changes, stage only the files you changed by name (see Restrictions), and commit
 5. Push and open a PR: `gh pr create --fill`
 6. User merges after review (never use `gh pr merge`)
 
@@ -17,6 +17,7 @@
 2. **Never force push to main** — `git push --force` and `--force-with-lease` are prohibited on `main`. They are allowed on feature branches only.
 3. **Never delete branches** — Do not run `git branch -D`, `git branch -d`, or `git push origin --delete`. The user handles branch cleanup.
 4. **No destructive git operations** — Do not run `git reset --hard`, `git checkout -- .`, `git clean -f`, or similar commands that discard uncommitted work.
+5. **Never stage everything** — Do not run `git add -A`, `git add .`, `git add --all`, or `git commit -a`/`-am`. Stage only the files you changed, by explicit path, and check `git diff --cached --name-only` before committing. Private material (chat exports, spreadsheets, credentials) can land in a working tree mid-session, and a blanket add commits it.
 
 ## Completing the Workflow
 
